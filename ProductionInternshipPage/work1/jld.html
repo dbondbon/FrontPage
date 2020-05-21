@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>局领导PC</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/jld.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/echarts.min.js"></script>
+		<script type="text/javascript" src="js/echarts.all-3.js"></script>
+		<script type="text/javascript" src="js/echarts-engine.js"></script>
+		<script type="text/javascript" src="js/china-map.js"></script>		
+		<script type="text/javascript" src="js/jld.js"></script>
+	</head>
+	<body background="img/BG.png">
+		<div class="container">
+			<!-- 顶部 -->
+			<<div class="row row1">
+				<div class="col-md-4">
+					<img src="img/t1.png" width="100%"/>
+				</div>
+				<div class="col-md-4">
+					<span class="jld_title">XX省戒毒管理局大数据指挥平台</span>
+				</div>
+				<div class="col-md-4">
+					<img src="img/t2.png" width="100%"/>
+				</div>
+			</div>
+			<div class="row row2">
+				<!-- 左 -->
+				<div class="col-md-4">
+					<div class="row row2-col1-1">
+						<div class="col-md-12">
+							<span class="subtitle">[ 今日动态 ]</span>
+							<div class="row">
+								<div class="col-md-4 jld_panel">
+									<span class="nomal_font">在册民警</span>
+									<br/>
+									<span class="number">1839</span>
+								</div>
+								<div class="col-md-4 jld_panel">
+									<span class="nomal_font">在岗民警</span>
+									<br/>
+									<span class="number">1100</span>
+								</div>
+								<div class="col-md-4 jld_panel">
+									<span class="nomal_font">在休民警</span>
+									<br/>
+									<span class="number">850</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 jld_panel">
+									<span class="nomal_font">在册戒毒人员</span>
+									<br/>
+									<span class="number">5943</span>
+								</div>
+								<div class="col-md-4 jld_panel">
+									<span class="nomal_font">在所戒毒人员</span>
+									<br/>
+									<span class="number">5934</span>
+								</div>
+								<div class="col-md-4 jld_panel">
+									<span class="nomal_font">所外就医</span>
+									<br/>
+									<span class="number">9</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row row2-col1-2 row_jld">
+						<div class="col-md-12">
+							<span class="subtitle">[ 收治情况 ]</span>
+							<br/>
+							<div class="nomal_chart" id="jld_chart2"></div>
+						</div>
+					</div>
+					<div class="row row2-col1-3 row_jld">
+						<div class="col-md-12">
+							<span class="subtitle">[ 各所值班 ]</span>
+							<br/>
+							<div class="table-responsive">
+								<table class="table">
+									<tr class="active">
+										<td>单位</td>
+										<td>指挥长</td>
+										<td>单位</td>
+										<td>指挥长</td>
+									</tr>
+									<tr class="info">
+										<td>方强</td>
+										<td></td>
+										<td>女所</td>
+										<td></td>
+									</tr>
+									<tr class="info">
+										<td>太湖</td>
+										<td></td>
+										<td>宜兴</td>
+										<td></td>
+									</tr>
+									<tr class="info">
+										<td>东海</td>
+										<td></td>
+										<td>大连山</td>
+										<td></td>
+									</tr>
+									<tr class="info">
+										<td>句东</td>
+										<td></td>
+										<td>南京</td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 中 -->
+				<div class="col-md-4">
+					<div class="col-md-12">
+						<div class="row map_title">
+							<div class="col-md-6 col-md-offset-6">
+								<span class="nomal_font">民警人数:</span><span class="number">1783</span><span class="nomal_font">人</span>
+								<br/>
+								<span class="nomal_font">戒毒人数:</span><span class="number">6822</span><span class="nomal_font">人</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 row2_map" id="jld_map"></div>
+						</div>
+					</div>
+				</div>
+				<!-- 右 -->
+				<div class="col-md-4">
+					<div class="row row2-col3-1">
+						<div class="col-md-12">
+							<span class="subtitle">[ 总体安全 ]</span>
+							<br/>
+							<div class="nomal_chart" id="jld_chart1"></div>
+						</div>
+					</div>
+					<div class="row row2-col3-2 row_jld">
+						<div class="col-md-12">
+							<span class="subtitle">[ 各所风险 ]</span>
+							<br/>
+							<div class="nomal_chart" id="jld_chart3"></div>
+						</div>
+					</div>
+					<div class="row row2-col3-3 row_jld">
+						<div class="col-md-12">
+							<span class="subtitle">[ 所情日报 ]</span>
+							<br/>
+							<div class="table-responsive">
+								<table class="table">
+									<tr class="active">
+										<td>单位</td>
+										<td>日报表</td>
+										<td>单位</td>
+										<td>日报表</td>
+									</tr>
+									<tr class="info">
+										<td>方强</td>
+										<td>4月20日所情报表</td>
+										<td>女所</td>
+										<td>4月20日所情报表</td>
+									</tr>
+									<tr class="info">
+										<td>太湖</td>
+										<td>4月20日所情报表</td>
+										<td>宜兴</td>
+										<td>4月20日所情报表</td>
+									</tr>
+									<tr class="info">
+										<td>东海</td>
+										<td>4月20日所情报表</td>
+										<td>大连山</td>
+										<td>4月20日所情报表</td>
+									</tr>
+									<tr class="info">
+										<td>句东</td>
+										<td>4月20日所情报表</td>
+										<td>南京</td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+.row1
+{
+	padding-top: 30px;
+}
+
+.jld_title
+{
+	color: #269ABC; 
+	font-size: 25px;
+}
+
+.subtitle
+{
+	color: skyblue;
+	font-size: 15px;
+}
+
+.nomal_font
+{
+	color: white;
+	font-size: 15px;
+}
+
+.number
+{
+	color: lightblue;
+	font-size: 15px;
+	width: 100%;
+}
+
+.jld_panel
+{
+	padding-top: 10px;
+	background-image: url(../img/border.png);
+	background-size: 100% 60px;
+	height: 60px;
+}
+
+.row2_map
+{
+	height: 480px;
+}
+
+.map_title
+{
+	padding-top: 40px;
+}
+
+.nomal_chart
+{
+	height: 160px;
+}
+
+.row_jld
+{
+	padding-top: 20px;
+}
