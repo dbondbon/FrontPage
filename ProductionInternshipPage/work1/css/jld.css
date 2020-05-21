@@ -3,6 +3,11 @@
 	padding-top: 30px;
 }
 
+.row2
+{
+	padding-top: 15px;
+}
+
 .jld_title
 {
 	color: #269ABC; 
@@ -48,7 +53,7 @@
 
 .nomal_chart
 {
-	height: 160px;
+	height: 180px;
 }
 
 .row_jld
