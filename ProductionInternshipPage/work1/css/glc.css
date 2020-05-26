@@ -29,3 +29,61 @@
 {
 	padding-top: 20px;
 }
+
+.search_text
+{
+	display: inline-block;
+	float: left;
+	width: 295px;
+}
+
+.search_btn
+{
+	display: inline-block;
+	float: left;
+	padding-left: 10px;
+}
+
+.search_btn1
+{
+	display: inline-block;
+	float: left;
+	padding-left: 80px;
+}
+
+.person_img
+{
+	height: 60px;
+	width: 60px;
+}
+
+.nomal_font
+{
+	color: white;
+	font-size: 10px;
+}
+
+.number
+{
+	color: lightblue;
+	font-size: 12px;
+	width: 100%;
+}
+
+.img_box1
+{
+	width: 60px;
+	display: inline-block;
+}
+
+.img_box2
+{
+	width: 60px;
+	display: inline-block;
+}
+
+.img_box3
+{
+	width: 60px;
+	display: inline-block;
+}
