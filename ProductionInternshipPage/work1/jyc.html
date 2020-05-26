@@ -2,8 +2,143 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>教育处PC</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/jyc.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/echarts.min.js"></script>
+		<script type="text/javascript" src="js/echarts.all-3.js"></script>
+		<script type="text/javascript" src="js/echarts-engine.js"></script>
+		<script type="text/javascript" src="js/china-map.js"></script>		
+		<script type="text/javascript" src="js/jyc.js"></script>
 	</head>
-	<body>
+	<body background="img/BG.png">
+		<div class="container">
+			<!-- 顶部 -->
+			<div class="row row1">
+				<div class="col-md-4">
+					<img src="img/t1.png" width="100%"/>
+				</div>
+				<div class="col-md-4">
+					<span class="jyc_title">XX省戒毒管理局大数据指挥平台</span>
+				</div>
+				<div class="col-md-4">
+					<img src="img/t2.png" width="100%"/>
+				</div>
+			</div>
+			<div class="row row2">
+				<!-- 左 -->
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-12">
+							<span class="subtitle">[ 集中教育开展 ]</span>
+							<br/>
+							<div class="nomal_chart" id="jyc_chart1"></div>
+						</div>
+					</div>
+					<div class="row row_jyc">
+						<div class="col-md-12">
+							<span class="subtitle">[ 本月谈话 ]</span>
+							<br/>
+							<div class="nomal_chart" id="jyc_chart2"></div>
+						</div>
+					</div>
+					<div class="row row_jyc">
+						<div class="col-md-12">
+							<span class="subtitle">[ 帮教活动开展 ]</span>
+							<br/>
+							<div class="nomal_chart" id="jyc_chart3"></div>
+						</div>
+					</div>
+				</div>
+				<!-- 中 -->
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-12">
+							<span class="subtitle">[ 诊断评估 ]</span>
+							<div class="btn_select1">
+								<button type="button" class="btn btn-info btn-xs">生理脱毒</button>
+								<button type="button" class="btn btn-default btn-xs">一年后</button>
+								<button type="button" class="btn btn-default btn-xs">期满前</button>
+							</div>
+							<div class="nomal_chart" id="jyc_chart4"></div>
+						</div>
+					</div>
+					<div class="row row_jyc">
+						<div class="col-md-12">
+							<span class="subtitle">[ 教转专档 ]</span>
+							<div class="btn_select2">
+								<button type="button" class="btn btn-info btn-xs">方强</button>
+								<button type="button" class="btn btn-default btn-xs">句东</button>
+								<button type="button" class="btn btn-default btn-xs">东海</button>
+								<button type="button" class="btn btn-default btn-xs">太湖</button>
+								<button type="button" class="btn btn-default btn-xs">女所</button>
+								<button type="button" class="btn btn-default btn-xs">宜兴</button>
+								<button type="button" class="btn btn-default btn-xs">大连山</button>
+							</div>
+							<div class="table-responsive">
+								<table class="table">
+									<tr class="active">
+										<td>所别</td>
+										<td>姓名</td>
+										<td>专档日期</td>
+									</tr>
+									<tr class="info">
+										<td>方强</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr class="info">
+										<td>方强</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr class="info">
+										<td>方强</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr class="info">
+										<td>方强</td>
+										<td></td>
+										<td></td>
+									</tr>
+								</table>
+						</div>
+					</div>
+					<div class="row row_jyc">
+						<div class="col-md-12">
+							<span class="subtitle">[ 协议签订 ]</span>
+							<br/>
+							<div class="nomal_chart" id="jyc_chart5"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+				<!-- 右 -->
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-12">
+							<span class="subtitle">[ 考试开展 ]</span>
+							<br/>
+							<div class="nomal_chart" id="jyc_chart6"></div>
+						</div>
+					</div>
+					<div class="row row_jyc">
+						<div class="col-md-12">
+							<span class="subtitle">[ 职业技能培训 ]</span>
+							<br/>
+							<div class="nomal_chart" id="jyc_chart7"></div>
+						</div>
+					</div>
+					<div class="row row_jyc">
+						<div class="col-md-12">
+							<span class="subtitle">[ 安全生产教育 ]</span>
+							<br/>
+							<div class="nomal_chart" id="jyc_chart8"></div>
+						</div>
+					</div>
+				</div>
+		</div>
 	</body>
 </html>

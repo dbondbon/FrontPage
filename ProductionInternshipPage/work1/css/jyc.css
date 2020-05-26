@@ -1,0 +1,41 @@
+.row1
+{
+	padding-top: 30px;
+}
+
+.row2
+{
+	padding-top: 15px;
+}
+
+.jyc_title
+{
+	color: #269ABC; 
+	font-size: 25px;
+}
+
+.subtitle
+{
+	color: skyblue;
+	font-size: 15px;
+}
+
+.nomal_chart
+{
+	height: 180px;
+}
+
+.row_jyc
+{
+	padding-top: 20px;
+}
+
+.btn_select1
+{
+	padding-left: 195px;
+}
+
+.btn_select2
+{
+	padding-bottom: 5px;
+}
