@@ -8,7 +8,7 @@
 	padding-top: 15px;
 }
 
-.jld_title
+.swc_title
 {
 	color: #269ABC; 
 	font-size: 25px;
@@ -18,6 +18,16 @@
 {
 	color: skyblue;
 	font-size: 15px;
+}
+
+.nomal_chart
+{
+	height: 180px;
+}
+
+.row_swc
+{
+	padding-top: 20px;
 }
 
 .nomal_font
@@ -33,31 +43,11 @@
 	width: 100%;
 }
 
-.jld_panel
+.swc_panel
 {
 	padding-top: 10px;
 	background-image: url(../img/border.png);
 	background-size: 100% 60px;
 	height: 60px;
 	text-align: center;
-}
-
-.row2_map
-{
-	height: 480px;
-}
-
-.map_title
-{
-	padding-top: 40px;
-}
-
-.nomal_chart
-{
-	height: 180px;
-}
-
-.row_jld
-{
-	padding-top: 20px;
 }

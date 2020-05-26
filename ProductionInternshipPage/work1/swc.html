@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>生卫处PC</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/swc.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/echarts.min.js"></script>
+		<script type="text/javascript" src="js/echarts.all-3.js"></script>
+		<script type="text/javascript" src="js/echarts-engine.js"></script>
+		<script type="text/javascript" src="js/china-map.js"></script>		
+		<script type="text/javascript" src="js/swc.js"></script>
+	</head>
+	<body background="img/BG.png">
+		<div class="container">
+			<!-- 顶部 -->
+			<div class="row row1">
+				<div class="col-md-4">
+					<img src="img/t1.png" width="100%"/>
+				</div>
+				<div class="col-md-4">
+					<span class="swc_title">XX省戒毒管理局大数据指挥平台</span>
+				</div>
+				<div class="col-md-4">
+					<img src="img/t2.png" width="100%"/>
+				</div>
+			</div>
+			<div class="row row2">
+				<!-- 左 -->
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-12">
+							<span class="subtitle">[ 人员配备  ]</span>
+							<br/>
+							<div class="row">
+								<div class="col-md-4 swc_panel">
+									<span class="nomal_font">医务人员</span>
+									<br/>
+									<span class="number">111</span>
+								</div>
+								<div class="col-md-4 swc_panel">
+									<span class="nomal_font">营养配餐</span>
+									<br/>
+									<span class="number">111</span>
+								</div>
+								<div class="col-md-4 swc_panel">
+									<span class="nomal_font">安全管理</span>
+									<br/>
+									<span class="number">111</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row row_swc">
+						<div class="col-md-12">
+							<span class="subtitle">[ 设施配备 ]</span>
+							<br/>
+							<div class="row">
+								<div class="col-md-4 swc_panel">
+									<span class="nomal_font">医疗设施</span>
+									<br/>
+									<span class="number">111</span>
+								</div>
+								<div class="col-md-4 swc_panel">
+									<span class="nomal_font">生活设施</span>
+									<br/>
+									<span class="number">111</span>
+								</div>
+								<div class="col-md-4 swc_panel">
+									<span class="nomal_font">食堂设施</span>
+									<br/>
+									<span class="number">111</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row row_swc">
+						<div class="col-md-12">
+							<span class="subtitle">[ 疾病防控 ]</span>
+							<br/>
+							<div class="col-md-6">
+								<div class="nomal_chart" id="swc_chart1"></div>
+							</div>
+							<div class="col-md-6">
+								<div class="nomal_chart" id="swc_chart2"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row row_swc">
+						<div class="col-md-12">
+							<span class="subtitle">[ 诊疗管理 ]</span>
+							<br/>
+							<div class="nomal_chart" id="swc_chart3"></div>
+						</div>
+					</div>
+				</div>
+				<!-- 中 -->
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-12">
+							<span class="subtitle">[ 脱毒治疗 ]</span>
+							<br/>
+							<div class="nomal_chart" id="swc_chart4"></div>
+						</div>
+					</div>
+					<div class="row row_swc">
+						<div class="col-md-12">
+							<span class="subtitle">[ 健康体检 ]</span>
+							<br/>
+							<div class="nomal_chart" id="swc_chart5"></div>
+						</div>
+					</div>
+					<div class="row row_swc">
+						<div class="col-md-12">
+							<span class="subtitle">[ 物资供应 ]</span>
+							<br/>
+							<div class="nomal_chart" id="swc_chart6"></div>
+						</div>
+					</div>
+				</div>
+				<!-- 右 -->
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-12">
+							<span class="subtitle">[ 每周食谱 ]</span>
+							<br/>
+							<div class="table-responsive">
+								<table class="table">
+									<tr class="active">
+										<td>单位</td>
+										<td>填报日期</td>
+										<td>详情</td>
+									</tr>
+									<tr class="info">
+										<td>方强</td>
+										<td>2020-4-27</td>
+										<td>查看</td>
+									</tr>
+									<tr class="info">
+										<td>东海</td>
+										<td>2020-4-27</td>
+										<td>查看</td>
+									</tr>
+									<tr class="info">
+										<td>太湖</td>
+										<td>2020-4-27</td>
+										<td>查看</td>
+									</tr>
+									<tr class="info">
+										<td>句东</td>
+										<td>2020-4-27</td>
+										<td>查看</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="row row_swc">
+						<div class="col-md-12">
+							<span class="subtitle">[ 账务管理 ]</span>
+							<br/>
+							<div class="nomal_chart" id="swc_chart7"></div>
+						</div>
+					</div>
+					<div class="row row_swc">
+						<div class="col-md-12">
+							<span class="subtitle">[ 生卫管理 ]</span>
+							<br/>
+							<div class="nomal_chart" id="swc_chart8"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
